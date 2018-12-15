@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Calender" />
+        <activity android:name=".ChatLog" />
+        <activity android:name=".Meet"></activity>
     </application>
 
 </manifest>
