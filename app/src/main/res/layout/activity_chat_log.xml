@@ -7,17 +7,28 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".ChatLog">
-
-    <ListView
-        android:id="@+id/listview"
+    <ScrollView
+        android:id="@+id/chatting_room_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/chat_background"
         android:layout_weight="9"
-        android:choiceMode="singleChoice"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:listSelector="@android:color/transparent"
-    />
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="normal"
+            android:stackFromBottom="true"
+        />
+    </ScrollView>
+
 
 
     <LinearLayout

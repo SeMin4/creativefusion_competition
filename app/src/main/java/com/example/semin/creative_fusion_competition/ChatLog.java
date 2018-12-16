@@ -3,9 +3,13 @@ package com.example.semin.creative_fusion_competition;
 import android.os.Environment;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.widget.ListViewAutoScrollHelper;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -38,6 +42,7 @@ public class ChatLog extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_log);
+        //getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         chat_text = (EditText) findViewById(R.id.chat_send_text);
         sendBtn = (Button) findViewById(R.id.send_btn);
         sendBtn2 = (Button) findViewById(R.id.send2_btn);
@@ -135,7 +140,7 @@ public class ChatLog extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     chatMessageAdapter.notifyDataSetChanged();
-                    listView.setSelection(chatMessageAdapter.getCount()-1);
+                   // listView.setSelection(chatMessageAdapter.getCount()-1);
                     tts.speak(send_text,TextToSpeech.QUEUE_ADD,null);
                 }
             }
@@ -151,4 +156,5 @@ public class ChatLog extends AppCompatActivity {
             tts= null;
         }
     }
+
 }
