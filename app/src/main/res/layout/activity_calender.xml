@@ -25,14 +25,36 @@
 
         ></CalendarView>
 
-    <TextView
-        android:id="@+id/calendar_text"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="그날의 기록"/>
-    
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="81dp"
+            android:src="@drawable/advicesample" />
+
+        <TextView
+            android:id="@+id/calendar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="그날의 기록"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/graph_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="월간 감정그래프 보기"
+        android:textSize="30dp" />
 </LinearLayout>
