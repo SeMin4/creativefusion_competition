@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.semin.creative_fusion_competition">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,16 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Calender" />
-        <activity android:name=".ChatLog"
+        <activity
+            android:name=".ChatLog"
             android:label="00이와의 대화기록"
             android:theme="@style/Chat_log"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".Meet" />
-
+        <activity android:name=".Graph"></activity>
     </application>
 
 </manifest>

@@ -5,22 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".Calender">
 
 
     <CalendarView
         android:id="@+id/real_calendar"
         android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:minDate="01/05/2018"
-        android:maxDate="12/31/2019"
+        android:layout_height="wrap_content"
 
         android:focusedMonthDateColor="#000000"
-        android:unfocusedMonthDateColor="#00ff8c"
+        android:maxDate="12/31/2019"
+
+        android:minDate="01/05/2018"
         android:showWeekNumber="false"
+        android:unfocusedMonthDateColor="#00ff8c"
         android:weekSeparatorLineColor="#3e3cb9"
 
 
         ></CalendarView>
+
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="그날의 기록"/>
+    
+    <Button
+        android:id="@+id/graph_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
 </LinearLayout>

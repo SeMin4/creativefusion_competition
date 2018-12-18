@@ -39,9 +39,9 @@
 
         <EditText
             android:id="@+id/chat_send_text"
-            android:layout_width="wrap_content"
+            android:layout_width="298dp"
             android:layout_height="wrap_content"
-            android:hint="@string/hint"/>
+            android:hint="@string/hint" />
         <Button
             android:id="@+id/send_btn"
             android:layout_width="wrap_content"
@@ -49,11 +49,6 @@
             android:text="전송"/>
 
 
-        <Button
-            android:id="@+id/send2_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="전송2"/>
 
 
     </LinearLayout>
